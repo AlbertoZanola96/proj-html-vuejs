@@ -50,7 +50,17 @@
       </div>
     </div>
     <div class="jumbotron">
-        <img class="svg" src="../assets/img/jumbo-overlay.svg" alt="">
+      <img class="svg" src="../assets/img/jumbo-overlay.svg" alt="">
+      <div class="text-jumbo">
+        <h1>Complete Your <br>Dreams in JavaS <br>Programming</h1>
+        <p>Lear any coding program in distance and for a <br>responsable fee. You don't have to struggle alone, <br>you've got our assistance and help.</p>
+        <div class="btn-jumbo">
+          <a href="#"><i class="fas fa-download"></i> Download free E-book</a>
+        </div>
+      </div>
+      <div class="img-jumbo">
+        <img src="../assets/img/home-5-hero-image.png" alt="">
+      </div>
     </div>
   </header>
 </template>
@@ -63,10 +73,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 header {
   width: 100%;
-  height: 750px;
+  height: 850px;
   background-color: #E9E6E3;
 
   .hed-top {
@@ -140,12 +151,68 @@ header {
     }
   }
   .jumbotron {
+    width: 62%;
+    height: 100%;
+    margin: 0 auto;
 
     .svg {
+      position: absolute;
+      top: 450px;
+      left: 10px;
       width: 100%;
       height: 400px;
       transform:rotateX(180deg);
-      margin-top: 290px;
+      z-index: 3;
+    }
+
+    .text-jumbo {
+      float: left;
+
+      h1 {
+        margin-top: 150px;
+        font-size: 40px;
+        color: #3F3A64;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 17px;
+        font-size: 600;
+        color: #9592A8;
+      }
+
+      .btn-jumbo {
+        margin-top: 40px;
+        width: 280px;
+        height: 60px;
+        background-color: #20AD96;
+        border-radius: 6px;
+
+        a {
+          display: flex;
+          justify-content: center;
+          padding-top: 17px;
+          text-decoration: none;
+          color: white;
+          
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+
+    }
+
+    .img-jumbo {
+      float: left;
+
+      img {
+        position: relative;
+        top: 100px;
+        left: 260px;
+        width: 100%;
+        z-index: 999;
+      }
     }
   }
 }
