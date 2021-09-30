@@ -158,7 +158,7 @@ header {
     .svg {
       position: absolute;
       top: 450px;
-      left: 10px;
+      left: 0;
       width: 100%;
       height: 400px;
       transform:rotateX(180deg);
@@ -209,8 +209,7 @@ header {
       img {
         position: relative;
         top: 100px;
-        left: 260px;
-        width: 100%;
+        left: 200px;
         z-index: 999;
       }
     }
