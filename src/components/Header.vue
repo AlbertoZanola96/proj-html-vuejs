@@ -1,58 +1,56 @@
 <template>
   <header>
-    <div class="container">
-      <div class="hed-top">
-        <div class="logo">
-        <img src="../assets/img/dark-logo.png" alt="">
-        </div>
-        <div class="serch">
-          <ul>
-            <li>
-              <a href="#">
-                <p>Home <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <p>Pages <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <p>Courses <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <p>Features <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <p>Blog <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <p>Shop <i class="fas fa-angle-down"></i></p>
-              </a>
-            </li>
-            <li>
-              <i class="fas fa-shopping-cart"></i>
-            </li>
-            <li>
-              <i class="far fa-user-circle"></i>
-            </li>
-            <li>
-              <input class="btn" type="text" placeholder="     Search...">
-              <i class="fas fa-search"></i>
-            </li>
-          </ul>
-        </div>
+    <div class="hed-top">
+      <div class="logo">
+      <img src="../assets/img/dark-logo.png" alt="">
       </div>
-      <div class="jumbotron">
-        
+      <div class="serch">
+        <ul>
+          <li>
+            <a href="#">
+              <p>Home <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Pages <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Courses <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Features <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Blog <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Shop <i class="fas fa-angle-down"></i></p>
+            </a>
+          </li>
+          <li>
+            <i class="fas fa-shopping-cart"></i>
+          </li>
+          <li>
+            <i class="far fa-user-circle"></i>
+          </li>
+          <li>
+            <input class="btn" type="text" placeholder="     Search...">
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="jumbotron">
+        <img class="svg" src="../assets/img/jumbo-overlay.svg" alt="">
     </div>
   </header>
 </template>
@@ -71,79 +69,83 @@ header {
   height: 750px;
   background-color: #E9E6E3;
 
-  .container {
-    width: 62%;
-    height: 100%;
+  .hed-top {
     margin: 0 auto;
-    // border: 1px solid black;
-    
-    .hed-top {
-      position: relative;
-      width: 100%;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    padding-top: 15px;
+    position: relative;
+    width: 62%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 
-      .logo {
-        float: left;
+    .logo {
+      float: left;
 
 
-        img {
-          width: 150px;
-        }
+      img {
+        width: 150px;
       }
+    }
 
-      .serch {
-        padding-top: 10px;
-        float: right;
+    .serch {
+      padding-top: 10px;
+      float: right;
+      display: flex;
+      margin-top: 20px;
+      
+
+      ul {
         display: flex;
-        margin-top: 20px;
-        
+        list-style: none;
 
-        ul {
-          display: flex;
-          list-style: none;
+        li {
+          margin-left: 28px;
 
-          li {
-            margin-left: 28px;
-
-            .btn {
-              position: relative;
-              bottom: 14px;
-              width: 200px;
-              height: 50px;
-              background-color: white;
-              border: none;
-              border-radius: 5px;
-              }
-
-            .fa-search {
-              position: absolute;
-              right: 15px;
-              top: 23px;
-              color: #20AD96;
-                 
+          .btn {
+            position: relative;
+            bottom: 14px;
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
             }
 
-            a {
-              text-decoration: none;
+          .fa-search {
+            position: absolute;
+            right: 15px;
+            top: 23px;
+            color: #20AD96;
+                
+          }
 
-              p {
-                font-size: 17px;
+          a {
+            text-decoration: none;
 
-                i {
-                  position: relative;
-                  bottom: 2px;
-                  padding-left: 2px;
-                  font-size: 12px;
-                }
+            p {
+              font-size: 17px;
+
+              i {
+                position: relative;
+                bottom: 2px;
+                padding-left: 2px;
+                font-size: 12px;
               }
             }
           }
         }
       }
+    }
+  }
+  .jumbotron {
+
+    .svg {
+      width: 100%;
+      height: 400px;
+      transform:rotateX(180deg);
+      margin-top: 290px;
     }
   }
 }
