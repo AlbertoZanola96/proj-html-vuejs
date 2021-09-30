@@ -44,7 +44,8 @@
               <i class="far fa-user-circle"></i>
             </li>
             <li>
-              <input type="text" name="" id="">
+              <input class="btn" type="text" placeholder="     Search...">
+              <i class="fas fa-search"></i>
             </li>
           </ul>
         </div>
@@ -71,39 +72,75 @@ header {
   background-color: #E9E6E3;
 
   .container {
-    width: 60%;
+    width: 62%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid black;
+    // border: 1px solid black;
     
     .hed-top {
+      position: relative;
       width: 100%;
-      height: 80px;
-      background-color: red;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
 
       .logo {
         float: left;
 
 
         img {
-          width: 170px;
+          width: 150px;
         }
       }
 
       .serch {
+        padding-top: 10px;
         float: right;
         display: flex;
-
+        margin-top: 20px;
+        
 
         ul {
           display: flex;
           list-style: none;
 
           li {
-            margin-left: 35px;
+            margin-left: 28px;
+
+            .btn {
+              position: relative;
+              bottom: 14px;
+              width: 200px;
+              height: 50px;
+              background-color: white;
+              border: none;
+              border-radius: 5px;
+              }
+
+            .fa-search {
+              position: absolute;
+              right: 15px;
+              top: 23px;
+              color: #20AD96;
+                 
+            }
+
+            a {
+              text-decoration: none;
+
+              p {
+                font-size: 17px;
+
+                i {
+                  position: relative;
+                  bottom: 2px;
+                  padding-left: 2px;
+                  font-size: 12px;
+                }
+              }
+            }
           }
         }
       }
