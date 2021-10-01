@@ -64,6 +64,26 @@
         </div>
       </div>
     </div>
+    <div class="block-three">
+      <div class="container-bth">
+        <div class="item-bth">
+          <h3>1.926</h3>
+          <p>FINISHED SESSIONS</p>
+        </div>
+        <div class="item-bth">
+          <h3>3.092 +</h3>
+          <p>ENROLLED LEARNERS</p>
+        </div>
+        <div class="item-bth">
+          <h3>200</h3>
+          <p>ONLINE INSTRUCTORS</p>
+        </div>
+        <div class="item-bth">
+          <h3>100 %</h3>
+          <p>SATISFACTION RATE</p>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -80,7 +100,7 @@ export default {
 @import "../style/vars";
 main {
   width: 100%;
-  background-color: #f0efef;
+  background-color: #F6F6F6;
 
   .block-one {
     width: 62%;
@@ -252,6 +272,31 @@ main {
       }
     }
   }
-}
+  .block-three {
+    width: 100%;
+    height: 200px;
+    background-color: #f2efed;
 
+    .container-bth {
+      margin: 0 auto;
+      width: 62%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 43px;
+        color: $secondario;
+      }
+      p {
+        font-size: 17px;
+        font-weight: 600;
+        color: $primario;
+      }
+    }
+
+  }
+}
 </style>
