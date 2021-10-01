@@ -51,6 +51,12 @@
     </div>
     <div class="jumbotron">
       <img class="svg" src="../assets/img/jumbo-overlay.svg" alt="">
+      <div class="element">
+        <i class="fas fa-ruler-combined"></i>
+        <i class="far fa-life-ring"></i>
+        <i class="fas fa-book"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
       <div class="text-jumbo">
         <h1>Complete Your <br>Dreams in JavaS <br>Programming</h1>
         <p>Lear any coding program in distance and for a <br>responsable fee. You don't have to struggle alone, <br>you've got our assistance and help.</p>
@@ -75,6 +81,7 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "../style/vars";
 header {
   width: 100%;
   height: 850px;
@@ -128,7 +135,7 @@ header {
             position: absolute;
             right: 15px;
             top: 23px;
-            color: #20AD96;
+            color: $secondario;
                 
           }
 
@@ -155,6 +162,19 @@ header {
     height: 100%;
     margin: 0 auto;
 
+    .element {
+      position: absolute;
+      right: 0;
+      top: 300px;
+      width: 40px;
+      height: 150px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
     .svg {
       position: absolute;
       top: 450px;
@@ -171,7 +191,7 @@ header {
       h1 {
         margin-top: 150px;
         font-size: 40px;
-        color: #3F3A64;
+        color: $primario;
         margin-bottom: 30px;
       }
 
@@ -185,7 +205,7 @@ header {
         margin-top: 40px;
         width: 280px;
         height: 60px;
-        background-color: #20AD96;
+        background-color: $secondario;
         border-radius: 6px;
 
         a {
