@@ -37,10 +37,13 @@
             </a>
           </li>
           <li>
-            <i class="fas fa-shopping-cart"></i>
+            <i style="color:gray" class="fas fa-shopping-cart"></i>
+            <div class="circle">
+              <p>0</p>
+            </div>
           </li>
           <li>
-            <i class="far fa-user-circle"></i>
+            <i style="color:gray" class="far fa-user-circle"></i>
           </li>
           <li>
             <input class="btn" type="text" placeholder="     Search...">
@@ -121,6 +124,22 @@ header {
         li {
           margin-left: 28px;
 
+            .circle {
+              position: absolute;
+              top: 20px;
+              left: 912px;
+              width: 15px;
+              height: 15px;
+              background-color: $secondario;
+              border-radius: 50%;
+
+              p {
+                color: white;
+                font-size: 10px;
+                text-align: center;
+              }
+            }
+
           .btn {
             position: relative;
             bottom: 14px;
@@ -134,7 +153,7 @@ header {
           .fa-search {
             position: absolute;
             right: 15px;
-            top: 23px;
+            top: 30px;
             color: $secondario;
                 
           }
@@ -149,7 +168,7 @@ header {
                 position: relative;
                 bottom: 2px;
                 padding-left: 2px;
-                font-size: 12px;
+                font-size: 19px;
               }
             }
           }
@@ -163,6 +182,7 @@ header {
     margin: 0 auto;
 
     .element {
+      color: #a5a5a5;
       position: absolute;
       right: 0;
       top: 300px;
