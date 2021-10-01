@@ -47,6 +47,12 @@
       <div class="bt-text">
         <p>DREAM WITH <span>MAXCOACH</span></p>
         <h2>Construct A <span>Stunning</span><br>Career Perspective</h2>
+        <div class="btn">
+          <p>Multiple Platform Supported for Teaching & Studying <i class="fas fa-minus-circle"></i></p>
+        </div>
+        <div class="btn-text">
+          <p>MaxCoach supports the act of teaching and learning on multiple<br> platforms like online or offline via material downloads. We know things<br> aren't supposed to be devoured in a shot time, you can always access<br> our knowledge base from any device.</p>
+        </div>
       </div>
     </div>
   </main>
@@ -65,6 +71,7 @@ export default {
 @import "../style/vars";
 main {
   width: 100%;
+  background-color: #f0efef;
 
   .block-one {
     width: 62%;
@@ -121,7 +128,7 @@ main {
 
           button {
             border: none;
-            background-color: white;
+            background-color: #f0efef;
             color: #a9abc4;
             font-size: 17px;
             font-weight: 600;
@@ -150,6 +157,7 @@ main {
         color: #666868;
         font-size: 17px;
         margin-left: 25px;
+        margin-bottom: 10px;
 
         span {
           font-weight: 600;
@@ -165,6 +173,40 @@ main {
         span {
           font-weight: 400;
           color: $secondario;
+        }
+      }
+
+      .btn {
+        margin-top: 35px;
+        margin-left: 25px;
+        width: 100%;
+        height: 60px;
+        background-color: #62C5B5;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        p {
+          color: white;
+          font-weight: 600;
+
+          i {
+            font-size: 21px;
+            padding-left: 60px;
+          }
+        }
+      }
+      .btn-text {
+        width: 100%;
+        height: 140px;
+        margin-left: 25px;
+        background-color: white;
+
+        p {
+          font-size: 14px;
+          padding-top: 24px;
+          padding-left: 10px;
         }
       }
     }
