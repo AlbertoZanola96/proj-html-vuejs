@@ -41,6 +41,7 @@
       </div>
     </div>
     <div class="block-two">
+      <img class="svg-bt" src="../assets/img/underlay-shape-lilla.svg" alt="">
       <div class="bt-img">
         <img src="../assets/img/about-us-03-image-01.png" alt="">
       </div>
@@ -52,6 +53,14 @@
         </div>
         <div class="btn-text">
           <p>MaxCoach supports the act of teaching and learning on multiple<br> platforms like online or offline via material downloads. We know things<br> aren't supposed to be devoured in a shot time, you can always access<br> our knowledge base from any device.</p>
+        </div>
+        <div class="btn-two">
+          <p>Multiple Course Participation at the Same Time</p>
+          <i class="fas fa-plus-circle"></i>
+        </div>
+        <div class="btn-two">
+          <p>Track Study Progress & Deliver Prompt Feedback </p>
+          <i class="fas fa-plus-circle"></i>
         </div>
       </div>
     </div>
@@ -138,12 +147,21 @@ main {
     }
   }
   .block-two {
+    position: relative;
     width: 62%;
-    height: 650px;
+    height: 700px;
     margin: 0 auto;
     padding-top: 20px;
 
+    .svg-bt {
+      position: absolute;
+      top: 115px;
+      left: -58px;
+      width: 400px;
+    }
+
     .bt-img {
+      position: relative;
       width: 50%;
       float: left;
       display: flex;
@@ -156,8 +174,8 @@ main {
       p {
         color: #666868;
         font-size: 17px;
-        margin-left: 25px;
         margin-bottom: 10px;
+        margin-left: 20px;
 
         span {
           font-weight: 600;
@@ -168,7 +186,7 @@ main {
         font-size: 40px;
         color: $primario;
         font-weight: 600;
-        margin-left: 25px;
+        margin-left: 20px;
 
         span {
           font-weight: 400;
@@ -178,7 +196,6 @@ main {
 
       .btn {
         margin-top: 35px;
-        margin-left: 25px;
         width: 100%;
         height: 60px;
         background-color: #62C5B5;
@@ -190,23 +207,47 @@ main {
         p {
           color: white;
           font-weight: 600;
+          padding-top: 10px;
 
           i {
             font-size: 21px;
-            padding-left: 60px;
+            padding-left: 70px;
           }
         }
       }
       .btn-text {
         width: 100%;
         height: 140px;
-        margin-left: 25px;
         background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         p {
           font-size: 14px;
           padding-top: 24px;
           padding-left: 10px;
+        }
+      }
+      .btn-two {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 35px;
+        border-radius: 10px;
+
+        p {
+          padding-top: 10px;
+          font-weight: 600;
+          color: #666868;
+        }
+        i {
+          right: 0;
+          font-size: 21px;
+          color: #666868;
+          margin-right: 20px;
         }
       }
     }

@@ -124,21 +124,25 @@ header {
         li {
           margin-left: 28px;
 
-            .circle {
-              position: absolute;
-              top: 20px;
-              left: 912px;
-              width: 15px;
-              height: 15px;
-              background-color: $secondario;
-              border-radius: 50%;
+          a {
+            color: $primario;
+          }
 
-              p {
-                color: white;
-                font-size: 10px;
-                text-align: center;
-              }
+          .circle {
+            position: absolute;
+            top: 20px;
+            left: 912px;
+            width: 15px;
+            height: 15px;
+            background-color: $secondario;
+            border-radius: 50%;
+
+            p {
+              color: white;
+              font-size: 10px;
+              text-align: center;
             }
+          }
 
           .btn {
             position: relative;
