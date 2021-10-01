@@ -166,9 +166,9 @@ header {
 
               i {
                 position: relative;
-                bottom: 2px;
+                bottom: 1px;
                 padding-left: 2px;
-                font-size: 19px;
+                font-size: 14px;
               }
             }
           }

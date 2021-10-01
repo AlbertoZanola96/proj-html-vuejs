@@ -5,8 +5,8 @@
         <p>START LEARNING CODING LANGUAGES</p>
         <h2>Build Your Dream <span>TODAY</span></h2>
       </div>
-      <div class="element">
-        <div class="item">
+      <div class="element1">
+        <div class="item1">
           <img src="../assets/img/home-5-image-box-01.png" alt="">
           <h3>Idea Discussion</h3>
           <p>Get teamed up with the specialists<br>who work and teach coding for years<br>at famous universities.</p>
@@ -14,7 +14,7 @@
             <button>Start now <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
-        <div class="item">
+        <div class="item1">
           <img src="../assets/img/home-5-image-box-02.png" alt="">
           <h3>Web Development</h3>
           <p>Learn to start building a webpage from<br>scratch. You decide your own pace,<br>course and speed.</p>
@@ -22,7 +22,7 @@
             <button>Start now <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
-        <div class="item">
+        <div class="item1">
           <img src="../assets/img/home-5-image-box-03.png" alt="">
           <h3>System Administration</h3>
           <p>Learners are encouraged to study the<br>mechanism and structure of system<br>administration.</p>
@@ -30,7 +30,7 @@
             <button>Start now <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
-        <div class="item">
+        <div class="item1">
           <img src="../assets/img/home-5-image-box-04.png" alt="">
           <h3>Graphic Design</h3>
           <p>have a passion for graphics and arts?<br>Show your talents with confidence and<br>self-assertiveness.</p>
@@ -38,6 +38,15 @@
             <button>Start now <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="block-two">
+      <div class="bt-img">
+        <img src="../assets/img/about-us-03-image-01.png" alt="">
+      </div>
+      <div class="bt-text">
+        <p>DREAM WITH <span>MAXCOACH</span></p>
+        <h2>Construct A <span>Stunning</span><br>Career Perspective</h2>
       </div>
     </div>
   </main>
@@ -84,12 +93,12 @@ main {
         }
       }
     }
-    .element {
+    .element1 {
       display: flex;
       justify-content: space-between;
       padding-top: 70px;
 
-      .item {
+      .item1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -113,10 +122,49 @@ main {
           button {
             border: none;
             background-color: white;
-            color: $primario;
+            color: #a9abc4;
             font-size: 17px;
             font-weight: 600;
           }
+        }
+      }
+    }
+  }
+  .block-two {
+    width: 62%;
+    height: 650px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    .bt-img {
+      width: 50%;
+      float: left;
+      display: flex;
+      justify-content: center;
+    }
+    .bt-text {
+      width: 50%;
+      float: left;
+
+      p {
+        color: #666868;
+        font-size: 17px;
+        margin-left: 25px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      h2 {
+        font-size: 40px;
+        color: $primario;
+        font-weight: 600;
+        margin-left: 25px;
+
+        span {
+          font-weight: 400;
+          color: $secondario;
         }
       }
     }
