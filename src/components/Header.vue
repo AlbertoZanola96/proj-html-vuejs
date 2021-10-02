@@ -197,6 +197,8 @@ header {
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
     }
 
     .svg {

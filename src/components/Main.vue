@@ -84,6 +84,12 @@
         </div>
       </div>
     </div>
+    <div class="block-four">
+      <div class="text-bf">
+        <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
+        <h3>Latest Featured <span>Courses</span></h3>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -297,6 +303,14 @@ main {
       }
     }
 
+  }
+  .block-four {
+    width: 100%;
+    height: 900px;
+    background-color: #e6e6e6;
+    border-radius: 950px / 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 </style>
