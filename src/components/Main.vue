@@ -92,6 +92,10 @@
       <div class="card-bf">
         <div class="item-bf">
           <img src="../assets/img/course-02-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">$40</span>
+            <span class="s2">.00</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
             <span class="name">Blanche Fields</span>
@@ -104,6 +108,9 @@
         </div>
         <div class="item-bf">
           <img src="../assets/img/stock-full-hd-03-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">Free</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/d0d504142acfde820eef2f11feea6253 (1).jpeg" alt="">
             <span class="name">Maggie Strickland</span>
@@ -116,6 +123,10 @@
         </div>
         <div class="item-bf">
           <img src="../assets/img/stock-full-hd-04-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">$19</span>
+            <span class="s2">.00</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/d0d504142acfde820eef2f11feea6253 (1).jpeg" alt="">
             <span class="name">Maggie Strickland</span>
@@ -128,6 +139,10 @@
         </div>
         <div class="item-bf">
           <img src="../assets/img/stock-full-hd-06-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">$26</span>
+            <span class="s2">.00</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
             <span class="name">Blanche Fields</span>
@@ -140,6 +155,10 @@
         </div>
         <div class="item-bf">
           <img src="../assets/img/course-featured-image-01-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">$39</span>
+            <span class="s2">.00</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
             <span class="name">Blanche Fields</span>
@@ -152,6 +171,10 @@
         </div>
         <div class="item-bf">
           <img src="../assets/img/stock-full-hd-05-480x298.jpg" alt="">
+          <div class="green-bf">
+            <span class="s1">$59</span>
+            <span class="s2">.00</span>
+          </div>
           <div class="pg">
             <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
             <span class="name">Blanche Fields</span>
@@ -162,6 +185,9 @@
             <span class="students"><i class="far fa-user"></i>76 Students</span>
           </div>
         </div>
+      </div>
+      <div class="btn-bf">
+        <button>View all courses <i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
   </main>
@@ -238,7 +264,7 @@ main {
 
           button {
             border: none;
-            background-color: #f0efef;
+            background-color: #f8f8f8;
             color: #a9abc4;
             font-size: 17px;
             font-weight: 600;
@@ -380,12 +406,38 @@ main {
 
   }
   .block-four {
+    position: relative;
     width: 100%;
-    height: 1400px;
-    background-color: #eeeeee;
+    height: 1350px;
+    background-color: #eeeded;
     border-radius: 950px / 50px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
+    .green-bf {
+      position: relative;
+      bottom: 227px;
+      left: 269px;
+      width: 85px;
+      height: 40px;
+      background-color: $secondario;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .s1 {
+        color: white;
+        font-weight: 600;
+      }
+
+      .s2 {
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
 
     .text-bf {
 
@@ -433,7 +485,6 @@ main {
         .pg {
           display: flex;
           align-items: center;
-          padding-top: 20px;
           margin-left: 30px;
 
           .user {
@@ -467,6 +518,21 @@ main {
             }
           }
         }
+      }
+    }
+    .btn-bf {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: none;
+        background-color: $secondario;
+        width: 250px;
+        height: 50px;
+        border-radius: 7px;
+        color: white;
+        font-weight: 600;
       }
     }
   }
