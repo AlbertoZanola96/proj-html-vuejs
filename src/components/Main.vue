@@ -193,14 +193,19 @@
     <div class="block-five">
       <div class="element-bfi">
         <div class="text-bfi">
-        <p>WHY HESITETE TO REGISTER?</p>
-        <h3>Learn At Your<br>Own <span>Pace</span></h3>
-        <p><i class="fas fa-check"></i> Select & customize courses to your preferences</p>
-        <p><i class="fas fa-check"></i> Change the tutor and make arrangements</p>
-        <p><i class="fas fa-check"></i> Participate in events to join others</p>
-        <p><i class="fas fa-check"></i> Get the desired certificate delivered at house</p>
-        <button>Get started for free</button>
-      </div>
+          <p>WHY HESITETE TO REGISTER?</p>
+          <h3>Learn At Your<br>Own <span>Pace</span></h3>
+          <p><i class="fas fa-check"></i> Select & customize courses to your preferences</p>
+          <p><i class="fas fa-check"></i> Change the tutor and make arrangements</p>
+          <p><i class="fas fa-check"></i> Participate in events to join others</p>
+          <p><i class="fas fa-check"></i> Get the desired certificate delivered at house</p>
+          <button>Get started for free</button>
+        </div>
+        <div class="img-bfi">
+          <img id="f1" src="../assets/img/underlay-shape-grey.svg" alt="">
+          <img id="f2" src="../assets/img/home-5-image-01.png" alt="">
+          <img id="f3" src="../assets/img/maxcoach-shape-05.png" alt="">
+        </div>
       </div>
     </div>
   </main>
@@ -555,7 +560,7 @@ main {
     bottom: 80px;
     padding-top: 120px;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     background-color: white;
     z-index: 5;
 
@@ -563,7 +568,13 @@ main {
       width: 62%;
       margin: 0 auto;
       padding-top: 100px;
+
       .text-bfi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 650px;
         float: left;
 
         p:first-child {
@@ -586,11 +597,11 @@ main {
 
         p {
           color: #666868;
-          padding-bottom: 10px;
+          padding-bottom: 15px;
 
           i {
             color: $secondario;
-            padding-right: 15px;
+            padding-right: 10px;
           }
         }
 
@@ -602,6 +613,32 @@ main {
           background-color: $secondario;
           color: white;
           border: none;
+        }
+      }
+      .img-bfi {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        height: 650px;
+        float: left;
+
+        #f1 {
+          position: absolute;
+          top: 160px;
+          left: -80px;
+          width: 90%;
+
+        }
+
+        #f2 {
+          position: relative;
+        }
+
+        #f3 {
+          position: absolute;
+          top: 350px;
+          right: -50px;
         }
       }
     }
