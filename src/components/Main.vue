@@ -89,6 +89,80 @@
         <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
         <h3>Latest Featured <span>Courses</span></h3>
       </div>
+      <div class="card-bf">
+        <div class="item-bf">
+          <img src="../assets/img/course-02-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
+            <span class="name">Blanche Fields</span>
+          </div>
+          <h3>Learning to Write as a<br>Professional Author</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>20 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>50 Students</span>
+          </div>
+        </div>
+        <div class="item-bf">
+          <img src="../assets/img/stock-full-hd-03-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/d0d504142acfde820eef2f11feea6253 (1).jpeg" alt="">
+            <span class="name">Maggie Strickland</span>
+          </div>
+          <h3>Customer-centric Info-Tech<br>Strategies</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>24 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>769 Students</span>
+          </div>
+        </div>
+        <div class="item-bf">
+          <img src="../assets/img/stock-full-hd-04-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/d0d504142acfde820eef2f11feea6253 (1).jpeg" alt="">
+            <span class="name">Maggie Strickland</span>
+          </div>
+          <h3>Open Programming Courses for<br>Everyone: Python</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>17 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>62 Students</span>
+          </div>
+        </div>
+        <div class="item-bf">
+          <img src="../assets/img/stock-full-hd-06-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
+            <span class="name">Blanche Fields</span>
+          </div>
+          <h3>Academic Listening and Note-<br>taking</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>14 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>67 Students</span>
+          </div>
+        </div>
+        <div class="item-bf">
+          <img src="../assets/img/course-featured-image-01-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
+            <span class="name">Blanche Fields</span>
+          </div>
+          <h3>Master jQuery in a Short Period<br>of Time</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>6 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>51 Students</span>
+          </div>
+        </div>
+        <div class="item-bf">
+          <img src="../assets/img/stock-full-hd-05-480x298.jpg" alt="">
+          <div class="pg">
+            <img class="user" src="../assets/img/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
+            <span class="name">Blanche Fields</span>
+          </div>
+          <h3>Introduction to Javascript for<br>Beginners</h3>
+          <div class="info">
+            <span class="lesson"><i class="far fa-file-alt"></i>14 Lessons</span> 
+            <span class="students"><i class="far fa-user"></i>76 Students</span>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -106,7 +180,7 @@ export default {
 @import "../style/vars";
 main {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f8f8f8;
 
   .block-one {
     width: 62%;
@@ -121,6 +195,7 @@ main {
         color: #666868;
         font-weight: 500;
         padding-bottom: 15px;
+        font-size: 17px;
       }
 
       h2 {
@@ -281,7 +356,7 @@ main {
   .block-three {
     width: 100%;
     height: 200px;
-    background-color: #f2efed;
+    background-color: #e7e4e1;
 
     .container-bth {
       margin: 0 auto;
@@ -306,11 +381,94 @@ main {
   }
   .block-four {
     width: 100%;
-    height: 900px;
-    background-color: #e6e6e6;
+    height: 1400px;
+    background-color: #eeeeee;
     border-radius: 950px / 50px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
+    .text-bf {
+
+      p {
+        text-align: center;
+        color: #666868;
+        font-size: 17px;
+        padding-top: 100px;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        color: $primario;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        span {
+          font-size: 40px;
+          color: $secondario;
+          font-weight: 400;
+        }
+      }
+
+    }
+    .card-bf {
+      width: 62%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .item-bf {
+        width: 30%;
+        height: 450px;
+        margin-bottom: 40px;
+
+        img:first-child {
+          width: 100%;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+        }
+
+        .pg {
+          display: flex;
+          align-items: center;
+          padding-top: 20px;
+          margin-left: 30px;
+
+          .user {
+            width: 35px;
+            border-radius: 50%;
+          }
+          .name {
+            padding-left: 20px;
+            color: #666868;
+          
+          }
+        }
+        h3 {
+          margin-left: 30px;
+          color: #333333;
+          margin-top: 10px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .info {
+          margin-top: 30px;
+          margin-left: 30px;
+
+          span {
+            padding-right: 45px;
+            font-size: 14px;
+            color: #666868;
+
+            i {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>
