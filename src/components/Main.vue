@@ -190,6 +190,19 @@
         <button>View all courses <i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
+    <div class="block-five">
+      <div class="element-bfi">
+        <div class="text-bfi">
+        <p>WHY HESITETE TO REGISTER?</p>
+        <h3>Learn At Your<br>Own <span>Pace</span></h3>
+        <p><i class="fas fa-check"></i> Select & customize courses to your preferences</p>
+        <p><i class="fas fa-check"></i> Change the tutor and make arrangements</p>
+        <p><i class="fas fa-check"></i> Participate in events to join others</p>
+        <p><i class="fas fa-check"></i> Get the desired certificate delivered at house</p>
+        <button>Get started for free</button>
+      </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -410,9 +423,10 @@ main {
     width: 100%;
     height: 1350px;
     background-color: #eeeded;
-    border-radius: 950px / 50px;
+    border-radius: 850px / 80px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    z-index: 999;
 
     .green-bf {
       position: relative;
@@ -533,6 +547,62 @@ main {
         border-radius: 7px;
         color: white;
         font-weight: 600;
+      }
+    }
+  }
+  .block-five {
+    position: relative;
+    bottom: 80px;
+    padding-top: 120px;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    z-index: 5;
+
+    .element-bfi {
+      width: 62%;
+      margin: 0 auto;
+      padding-top: 100px;
+      .text-bfi {
+        float: left;
+
+        p:first-child {
+          color: #666868;
+          font-weight: 500;
+        }
+
+        h3 {
+          font-size: 40px;
+          font-weight: 600;
+          color: $primario;
+          margin-bottom: 20px;
+
+          span {
+            font-size: 40px;
+            color: $secondario;
+            font-weight: 500;
+          }
+        }
+
+        p {
+          color: #666868;
+          padding-bottom: 10px;
+
+          i {
+            color: $secondario;
+            padding-right: 15px;
+          }
+        }
+
+        button {
+          margin-top: 20px;
+          width: 220px;
+          height: 50px;
+          border-radius: 7px;
+          background-color: $secondario;
+          color: white;
+          border: none;
+        }
       }
     }
   }
