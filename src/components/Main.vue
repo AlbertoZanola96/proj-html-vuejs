@@ -714,6 +714,17 @@ main {
           left: -120px;
           top: 210px;
         }
+
+        .circle {
+          position: absolute;
+          top: 50px;
+          right: 10px;
+          width: 60px;
+          height: 60px;
+          background-color: white;
+          border-radius: 50%;
+          border: 8px solid #ECC5AB;
+        }
       }
 
       .text-bs {
