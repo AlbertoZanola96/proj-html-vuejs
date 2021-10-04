@@ -342,6 +342,14 @@
         </div>
       </div>
     </div>
+    <div class="block-nine">
+      <div class="circle"></div>
+      <img class="img-1" src="../assets/img/maxcoach-shape-01.png" alt="">
+      <img class="img-2" src="../assets/img/maxcoach-shape-02.png" alt="">
+      <p>Start today for getting <span>Online Certification</span></p>
+      <h3>You can be your own guiding star with our help!</h3> 
+      <button>Get started now</button>
+    </div>
   </main>
 </template>
 
@@ -1088,6 +1096,57 @@ main {
         }
         
       } 
+    }
+  }
+  .block-nine {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: #eeeded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-top: 80px;
+      text-align: center;
+      color: $primario;
+      font-size: 25px;
+      font-weight: 600;
+
+      span {
+        color: $secondario;
+        font-weight: 400;
+      }
+    }
+    h3 {
+      text-align: center;
+      color: $primario;
+      font-size: 35px;
+    }
+
+    button {
+      width: 275px;
+      height: 50px;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background-color: $secondario;
+      margin-top: 30px;
+    }
+
+    .img-1 {
+      position: absolute;
+      top: 160px;
+      left: 350px;
+    }
+
+    .img-2 {
+      position: absolute;
+      bottom: 70px;
+      right: 350px;
+
     }
   }
 }
