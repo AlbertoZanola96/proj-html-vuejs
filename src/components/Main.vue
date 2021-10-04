@@ -208,6 +208,23 @@
         </div>
       </div>
     </div>
+    <div class="block-six">
+      <div class="element-bs">
+        <div class="img-bs">
+          <img class="f1" src="../assets/img/underlay-shape-grey.svg" alt="">
+          <img class="f2" src="../assets/img/maxcoach-shape-07.png" alt="">
+          <img class="f3" src="../assets/img/home-5-image-02.png" alt="">
+          <img class="f4" src="../assets/img/maxcoach-shape-01.png" alt="">
+          <div class="circle"></div>
+        </div>
+        <div class="text-bs">
+          <p>WHAT ARE YOU LOOKING FOR?</p>
+          <h3>Learn on your <span>mobile</span><br>anytime!</h3>
+          <p>Save lessons for later and revise or write notes at any time and on<br>multiple devices on your way. Never interfere with activities of<br>enjoyment or other precius moments.</p>
+          <button>Download Our App</button>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -609,6 +626,7 @@ main {
           margin-top: 20px;
           width: 220px;
           height: 50px;
+          font-weight: 600;
           border-radius: 7px;
           background-color: $secondario;
           color: white;
@@ -641,6 +659,54 @@ main {
           right: -50px;
         }
       }
+    }
+  }
+  .block-six {
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    padding-top: 40px;
+
+    .element-bs {
+      width: 62%;
+      margin: 0 auto;
+    }
+
+    .img-bs {
+      position: relative;
+      width: 50%;
+      float: left;
+
+      .f1 {
+        position: absolute;
+        top: 50px;
+        left: -40px;
+        width: 500px;
+      }
+
+      .f2 {
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+      }
+
+      .f3 {
+        position: relative;
+        left: 105px;
+      }
+
+      .f4 {
+        position: absolute;
+        left: -120px;
+        top: 210px;
+      }
+    }
+
+    .text-bs {
+      float: left;
+      width: 50%;
     }
   }
 }
