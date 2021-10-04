@@ -1,66 +1,70 @@
 <template>
   <main>
     <div class="block-one">
-      <div class="text-one">
-        <p>START LEARNING CODING LANGUAGES</p>
-        <h2>Build Your Dream <span>TODAY</span></h2>
-      </div>
-      <div class="element1">
-        <div class="item1">
-          <img src="../assets/img/home-5-image-box-01.png" alt="">
-          <h3>Idea Discussion</h3>
-          <p>Get teamed up with the specialists<br>who work and teach coding for years<br>at famous universities.</p>
-          <div class="btn">
-            <button>Start now <i class="fas fa-arrow-right"></i></button>
-          </div>
+      <div class="container">
+        <div class="text-one">
+          <p>START LEARNING CODING LANGUAGES</p>
+          <h2>Build Your Dream <span>TODAY</span></h2>
         </div>
-        <div class="item1">
-          <img src="../assets/img/home-5-image-box-02.png" alt="">
-          <h3>Web Development</h3>
-          <p>Learn to start building a webpage from<br>scratch. You decide your own pace,<br>course and speed.</p>
-          <div class="btn">
-            <button>Start now <i class="fas fa-arrow-right"></i></button>
+        <div class="element1">
+          <div class="item1">
+            <img src="../assets/img/home-5-image-box-01.png" alt="">
+            <h3>Idea Discussion</h3>
+            <p>Get teamed up with the specialists<br>who work and teach coding for years<br>at famous universities.</p>
+            <div class="btn">
+              <button>Start now <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
-        </div>
-        <div class="item1">
-          <img src="../assets/img/home-5-image-box-03.png" alt="">
-          <h3>System Administration</h3>
-          <p>Learners are encouraged to study the<br>mechanism and structure of system<br>administration.</p>
-          <div class="btn">
-            <button>Start now <i class="fas fa-arrow-right"></i></button>
+          <div class="item1">
+            <img src="../assets/img/home-5-image-box-02.png" alt="">
+            <h3>Web Development</h3>
+            <p>Learn to start building a webpage from<br>scratch. You decide your own pace,<br>course and speed.</p>
+            <div class="btn">
+              <button>Start now <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
-        </div>
-        <div class="item1">
-          <img src="../assets/img/home-5-image-box-04.png" alt="">
-          <h3>Graphic Design</h3>
-          <p>have a passion for graphics and arts?<br>Show your talents with confidence and<br>self-assertiveness.</p>
-          <div class="btn">
-            <button>Start now <i class="fas fa-arrow-right"></i></button>
+          <div class="item1">
+            <img src="../assets/img/home-5-image-box-03.png" alt="">
+            <h3>System Administration</h3>
+            <p>Learners are encouraged to study the<br>mechanism and structure of system<br>administration.</p>
+            <div class="btn">
+              <button>Start now <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="../assets/img/home-5-image-box-04.png" alt="">
+            <h3>Graphic Design</h3>
+            <p>have a passion for graphics and arts?<br>Show your talents with confidence and<br>self-assertiveness.</p>
+            <div class="btn">
+              <button>Start now <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="block-two">
-      <img class="svg-bt" src="../assets/img/underlay-shape-lilla.svg" alt="">
-      <div class="bt-img">
-        <img src="../assets/img/about-us-03-image-01.png" alt="">
-      </div>
-      <div class="bt-text">
-        <p>DREAM WITH <span>MAXCOACH</span></p>
-        <h2>Construct A <span>Stunning</span><br>Career Perspective</h2>
-        <div class="btn">
-          <p>Multiple Platform Supported for Teaching & Studying <i class="fas fa-minus-circle"></i></p>
+      <div class="container">
+        <img class="svg-bt" src="../assets/img/underlay-shape-lilla.svg" alt="">
+        <div class="bt-img">
+          <img src="../assets/img/about-us-03-image-01.png" alt="">
         </div>
-        <div class="btn-text">
-          <p>MaxCoach supports the act of teaching and learning on multiple<br> platforms like online or offline via material downloads. We know things<br> aren't supposed to be devoured in a shot time, you can always access<br> our knowledge base from any device.</p>
-        </div>
-        <div class="btn-two">
-          <p>Multiple Course Participation at the Same Time</p>
-          <i class="fas fa-plus-circle"></i>
-        </div>
-        <div class="btn-two">
-          <p>Track Study Progress & Deliver Prompt Feedback </p>
-          <i class="fas fa-plus-circle"></i>
+        <div class="bt-text">
+          <p>DREAM WITH <span>MAXCOACH</span></p>
+          <h2>Construct A <span>Stunning</span><br>Career Perspective</h2>
+          <div class="btn">
+            <p>Multiple Platform Supported for Teaching & Studying <i class="fas fa-minus-circle"></i></p>
+          </div>
+          <div class="btn-text">
+            <p>MaxCoach supports the act of teaching and learning on multiple<br> platforms like online or offline via material downloads. We know things<br> aren't supposed to be devoured in a shot time, you can always access<br> our knowledge base from any device.</p>
+          </div>
+          <div class="btn-two">
+            <p>Multiple Course Participation at the Same Time</p>
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="btn-two">
+            <p>Track Study Progress & Deliver Prompt Feedback </p>
+            <i class="fas fa-plus-circle"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -241,68 +245,73 @@ export default {
 @import "../style/vars";
 main {
   width: 100%;
-  background-color: #f8f8f8;
 
   .block-one {
-    width: 62%;
+    width: 100%;
     height: 650px;
-    margin: 0 auto;
+    background-color: #f8f8f8;
 
-    .text-one {
-      text-align: center;
-      padding-top: 70px;
 
-      p {
-        color: #666868;
-        font-weight: 500;
-        padding-bottom: 15px;
-        font-size: 17px;
-      }
+    .container {
+      width: 62%;
+      margin: 0 auto;
 
-      h2 {
-        font-size: 40px;
-        color: $primario;
-        font-weight: 600;
-
-        span {
-          font-size: 40px;
-          color: $secondario;
-          font-weight: 600;
-        }
-      }
-    }
-    .element1 {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 70px;
-
-      .item1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          font-weight: 600;
-          color: #0e0e0e;
-        }
+      .text-one {
+        text-align: center;
+        padding-top: 70px;
 
         p {
           color: #666868;
-          font-size: 14px;
-          text-align: center;
-          padding-top: 20px;
+          font-weight: 500;
+          padding-bottom: 15px;
+          font-size: 17px;
         }
 
-        .btn {
-          margin-top: 20px;
+        h2 {
+          font-size: 40px;
+          color: $primario;
+          font-weight: 600;
 
-          button {
-            border: none;
-            background-color: #f8f8f8;
-            color: #a9abc4;
-            font-size: 17px;
+          span {
+            font-size: 40px;
+            color: $secondario;
             font-weight: 600;
+          }
+        }
+      }
+      .element1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+
+        .item1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            font-weight: 600;
+            color: #0e0e0e;
+          }
+
+          p {
+            color: #666868;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 20px;
+          }
+
+          .btn {
+            margin-top: 20px;
+
+            button {
+              border: none;
+              background-color: #f8f8f8;
+              color: #a9abc4;
+              font-size: 17px;
+              font-weight: 600;
+            }
           }
         }
       }
@@ -310,106 +319,111 @@ main {
   }
   .block-two {
     position: relative;
-    width: 62%;
+    width: 100%;
+    background-color: #f8f8f8;
     height: 700px;
-    margin: 0 auto;
     padding-top: 20px;
 
-    .svg-bt {
-      position: absolute;
-      top: 115px;
-      left: -58px;
-      width: 400px;
-    }
+    .container {
+      width: 62%;
+      margin: 0 auto;
 
-    .bt-img {
-      position: relative;
-      width: 50%;
-      float: left;
-      display: flex;
-      justify-content: center;
-    }
-    .bt-text {
-      width: 50%;
-      float: left;
-
-      p {
-        color: #666868;
-        font-size: 17px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-
-        span {
-          font-weight: 600;
-        }
+      .svg-bt {
+        position: absolute;
+        top: 115px;
+        left: 310px;
+        width: 400px;
       }
 
-      h2 {
-        font-size: 40px;
-        color: $primario;
-        font-weight: 600;
-        margin-left: 20px;
-
-        span {
-          font-weight: 400;
-          color: $secondario;
-        }
-      }
-
-      .btn {
-        margin-top: 35px;
-        width: 100%;
-        height: 60px;
-        background-color: #62C5B5;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+      .bt-img {
+        position: relative;
+        width: 50%;
+        float: left;
         display: flex;
-        align-items: center;
+        justify-content: center;
+      }
+      .bt-text {
+        width: 50%;
+        float: left;
 
         p {
-          color: white;
-          font-weight: 600;
-          padding-top: 10px;
+          color: #666868;
+          font-size: 17px;
+          margin-bottom: 10px;
+          margin-left: 20px;
 
-          i {
-            font-size: 21px;
-            padding-left: 70px;
+          span {
+            font-weight: 600;
           }
         }
-      }
-      .btn-text {
-        width: 100%;
-        height: 140px;
-        background-color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
 
-        p {
-          font-size: 14px;
-          padding-top: 24px;
-          padding-left: 10px;
-        }
-      }
-      .btn-two {
-        width: 100%;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-        margin-top: 35px;
-        border-radius: 10px;
-
-        p {
-          padding-top: 10px;
+        h2 {
+          font-size: 40px;
+          color: $primario;
           font-weight: 600;
-          color: #666868;
+          margin-left: 20px;
+
+          span {
+            font-weight: 400;
+            color: $secondario;
+          }
         }
-        i {
-          right: 0;
-          font-size: 21px;
-          color: #666868;
-          margin-right: 20px;
+
+        .btn {
+          margin-top: 35px;
+          width: 100%;
+          height: 60px;
+          background-color: #62C5B5;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          display: flex;
+          align-items: center;
+
+          p {
+            color: white;
+            font-weight: 600;
+            padding-top: 10px;
+
+            i {
+              font-size: 21px;
+              padding-left: 70px;
+            }
+          }
+        }
+        .btn-text {
+          width: 100%;
+          height: 140px;
+          background-color: white;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+
+          p {
+            font-size: 14px;
+            padding-top: 24px;
+            padding-left: 10px;
+          }
+        }
+        .btn-two {
+          width: 100%;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: white;
+          margin-top: 35px;
+          border-radius: 10px;
+
+          p {
+            padding-top: 10px;
+            font-weight: 600;
+            color: #666868;
+          }
+          i {
+            right: 0;
+            font-size: 21px;
+            color: #666868;
+            margin-right: 20px;
+          }
         }
       }
     }
