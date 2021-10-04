@@ -231,8 +231,81 @@
     </div>
     <div class="block-seven">
       <div class="container">
-        <p>GET IN CONTACT NOW</p>
-        <h3>Upcoming <span>Events</span></h3>
+        <div class="center">
+          <p>GET IN CONTACT NOW</p>
+          <h3>Upcoming <span>Events</span></h3>
+        </div>
+        <div class="elements">
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> Texas, US</p>
+              <h4>Storytelling Workshop</h4>
+            </div>
+            <div class="item-r">
+              <h4>22</h4>
+              <h4>NOV</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> New York, US</p>
+              <h4>Painting Art Contest 2020</h4>
+            </div>
+            <div class="item-r">
+              <h4>10</h4>
+              <h4>OCT</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</p>
+              <h4>International Art Fair 2020</h4>
+            </div>
+            <div class="item-r">
+              <h4>23</h4>
+              <h4>NOV</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> Illinois, US</p>
+              <h4>Street Performance: Call for Artist</h4>
+            </div>
+            <div class="item-r">
+              <h4>15</h4>
+              <h4>DEC</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> Illinois, US</p>
+              <h4>Consumer Food Safety Education Conference</h4>
+            </div>
+            <div class="item-r">
+              <h4>22</h4>
+              <h4>JUL</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-l">
+              <p><i class="fas fa-map-marker-alt"></i> Dubai</p>
+              <h4>How meditation improve your mental health?</h4>
+            </div>
+            <div class="item-r">
+              <h4>12</h4>
+              <h4>AUG</h4>
+              <button>Get ticket</button>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <p>Excited about our event? <span>View all events <i class="fas fa-arrow-right"></i></span></p>
+        </div>
       </div>
     </div>
   </main>
@@ -786,8 +859,17 @@ main {
     .container {
       width: 62%;
       margin: 0 auto;
-      text-align: center;
 
+      .center {
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 20px;
+
+        span {
+          color: $secondario;
+          font-weight: 600;
+        }
+      }
       p:first-child {
         color: #666868;
         font-weight: 500;
@@ -803,6 +885,74 @@ main {
           font-size: 40px;
           color: $secondario;
           font-weight: 500;
+        }
+      }
+      .elements {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+          width: 570px;
+          height: 170px;
+          background-color: #F8F8F8;
+          margin-bottom: 35px;
+          border-radius: 8px;
+
+          .item-l {
+            width: 60%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 30px 0 0 35px;
+
+
+            p {
+              font-size: 15px;
+            }
+            
+            h4 {
+              font-size: 17px;
+              font-weight: 600;
+              color: #333333;
+              padding-top: 10px;
+            }
+          }
+
+          .item-r {
+            width: 30%;
+            height: 170px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+
+            h4:first-child {
+              font-size: 50px;
+              font-weight: 400;
+              color: $secondario;
+            }
+
+            h4 {
+              color: #333333;
+              font-weight: 600;
+            }
+
+            button {
+              width: 125px;
+              height: 33px;
+              font-weight: 600;
+              border-radius: 7px;
+              background-color: $secondario;
+              color: white;
+              border: none;
+            }
+          }
         }
       }
     }
