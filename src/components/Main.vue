@@ -646,7 +646,6 @@ main {
           top: 160px;
           left: -80px;
           width: 90%;
-
         }
 
         #f2 {
@@ -672,41 +671,80 @@ main {
     .element-bs {
       width: 62%;
       margin: 0 auto;
-    }
 
-    .img-bs {
-      position: relative;
-      width: 50%;
-      float: left;
-
-      .f1 {
-        position: absolute;
-        top: 50px;
-        left: -40px;
-        width: 500px;
-      }
-
-      .f2 {
-        position: absolute;
-        bottom: 70px;
-        right: 0;
-      }
-
-      .f3 {
+      .img-bs {
         position: relative;
-        left: 105px;
+        width: 50%;
+        float: left;
+
+        .f1 {
+          position: absolute;
+          top: 50px;
+          left: -40px;
+          width: 500px;
+        }
+
+        .f2 {
+          position: absolute;
+          bottom: 70px;
+          right: 0;
+        }
+
+        .f3 {
+          position: relative;
+          left: 105px;
+        }
+
+        .f4 {
+          position: absolute;
+          left: -120px;
+          top: 210px;
+        }
       }
 
-      .f4 {
-        position: absolute;
-        left: -120px;
-        top: 210px;
-      }
-    }
+      .text-bs {
+        padding-left: 115px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 560px;
 
-    .text-bs {
-      float: left;
-      width: 50%;
+        p:first-child {
+          color: #666868;
+          font-weight: 500;
+        }
+
+        h3 {
+          font-size: 40px;
+          font-weight: 600;
+          color: $primario;
+          margin-bottom: 10px;
+
+          span {
+            font-size: 40px;
+            color: $secondario;
+            font-weight: 500;
+          }
+        }
+
+        p {
+          color: #666868;
+          font-size: 14px;
+        }
+
+        button {
+          margin-top: 20px;
+          width: 220px;
+          height: 50px;
+          font-weight: 600;
+          border-radius: 7px;
+          background-color: $secondario;
+          color: white;
+          border: none;
+        }
+      }
     }
   }
 }
