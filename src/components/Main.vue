@@ -229,6 +229,12 @@
         </div>
       </div>
     </div>
+    <div class="block-seven">
+      <div class="container">
+        <p>GET IN CONTACT NOW</p>
+        <h3>Upcoming <span>Events</span></h3>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -768,6 +774,35 @@ main {
           background-color: $secondario;
           color: white;
           border: none;
+        }
+      }
+    }
+  }
+  .block-seven {
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+
+    .container {
+      width: 62%;
+      margin: 0 auto;
+      text-align: center;
+
+      p:first-child {
+        color: #666868;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 40px;
+        font-weight: 600;
+        color: $primario;
+        margin-top: 15px;
+
+        span {
+          font-size: 40px;
+          color: $secondario;
+          font-weight: 500;
         }
       }
     }
