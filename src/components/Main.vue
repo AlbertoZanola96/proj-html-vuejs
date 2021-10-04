@@ -314,23 +314,31 @@
           <p>PEOPLE ARE PRAISING MAXCOACH</p>
           <h3>What make they <span>love us?</span></h3>
         </div>
-        <div class="item-be">
-          <img src="../assets/img/testimonial-avata-02.jpg" alt="">
-          <p>I am free to learn at my own pace,<br>follow my own schedule and choose<br>the subject i like. Great study portal<br> for people like me.</p>
-          <h5>MINA HOLLACE</h5>
-          <p>/ freelancer</p>
+        <div class="elements-bs">
+          <div class="item-be">
+            <img src="../assets/img/testimonial-avata-02.jpg" alt="">
+            <p>I am free to learn at my own pace,<br>follow my own schedule and choose<br>the subject i like. Great study portal<br> for people like me.</p>
+            <h5>MINA HOLLACE</h5>
+            <p>/ Freelancer</p>
+          </div>
+          <div class="item-be">
+            <img src="../assets/img/testimonial-avata-04.jpg" alt="">
+            <p>MaxCoach is my best choice. Their<br>tutors are smart and professional<br>when dealing with students.</p>
+            <h5>MADLEY PONDOR</h5>
+            <p>/ IT Specialist</p>
+          </div>
+          <div class="item-be">
+            <img src="../assets/img/testimonial-avata-01.jpg" alt="">
+            <p>I am happy with their arrangement of<br>lessons and subjects. They reflect a<br>scientific investigation.</p>
+            <h5>LUVIC DUBBLE</h5>
+            <p>/ Private Tutor</p>
+          </div>
         </div>
-        <div class="item-be">
-          <img src="../assets/img/testimonial-avata-04.jpg" alt="">
-          <p>MaxCoach is my best choice. Their<br>tutors are smart and professional<br>when dealing with students.</p>
-          <h5>MADLEY PONDOR</h5>
-          <p>/ IT Specialist</p>
-        </div>
-        <div class="item-be">
-          <img src="../assets/img/testimonial-avata-01.jpg" alt="">
-          <p>I am happy with their arrangement of<br>lessons and subjects. They reflect a<br>scientific investigation.</p>
-          <h5>LUVIC DUBBLE</h5>
-          <p>/ Private Tutor</p>
+        <div class="punti">
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
         </div>
       </div>
     </div>
@@ -985,14 +993,17 @@ main {
   }
   .block-eight {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: #eeeded;
 
-    .center {
-      text-align: center;
-      padding-top: 100px;
+    .container {
+      width: 62%;
+      margin: 0 auto;
+      .center {
+        text-align: center;
+        padding-top: 100px;
 
-      p:first-child {
+        p:first-child {
           color: #666868;
           font-weight: 500;
         }
@@ -1009,6 +1020,74 @@ main {
             font-weight: 500;
           }
         }
+      }
+
+      .elements-bs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 135px;
+
+        .item-be {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          height: 300px;
+          background-color: white;
+
+        
+          img {
+            position: absolute;
+            top: -65px;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+          }
+
+          p:first-of-type {
+            color: $primario;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: $primario;
+            font-size: 18px;
+            text-align: center;
+          }
+
+          h5 {
+
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333333;
+            font-weight: 600;
+          }
+          
+          p {
+            text-align: center;
+            font-size: 13px;
+            color: #666868;
+          }
+        }
+      }
+      .punti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        i:first-of-type {
+          font-size: 15px;
+          color: $primario;
+        }
+
+        i {
+          color: #b8bbbb;
+          font-size: 11px;
+          padding: 10px;
+        }
+        
+      } 
     }
   }
 }
