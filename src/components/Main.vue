@@ -308,6 +308,32 @@
         </div>
       </div>
     </div>
+    <div class="block-eight">
+      <div class="container">
+        <div class="center">
+          <p>PEOPLE ARE PRAISING MAXCOACH</p>
+          <h3>What make they <span>love us?</span></h3>
+        </div>
+        <div class="item-be">
+          <img src="../assets/img/testimonial-avata-02.jpg" alt="">
+          <p>I am free to learn at my own pace,<br>follow my own schedule and choose<br>the subject i like. Great study portal<br> for people like me.</p>
+          <h5>MINA HOLLACE</h5>
+          <p>/ freelancer</p>
+        </div>
+        <div class="item-be">
+          <img src="../assets/img/testimonial-avata-04.jpg" alt="">
+          <p>MaxCoach is my best choice. Their<br>tutors are smart and professional<br>when dealing with students.</p>
+          <h5>MADLEY PONDOR</h5>
+          <p>/ IT Specialist</p>
+        </div>
+        <div class="item-be">
+          <img src="../assets/img/testimonial-avata-01.jpg" alt="">
+          <p>I am happy with their arrangement of<br>lessons and subjects. They reflect a<br>scientific investigation.</p>
+          <h5>LUVIC DUBBLE</h5>
+          <p>/ Private Tutor</p>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -955,6 +981,34 @@ main {
           }
         }
       }
+    }
+  }
+  .block-eight {
+    width: 100%;
+    height: 500px;
+    background-color: #eeeded;
+
+    .center {
+      text-align: center;
+      padding-top: 100px;
+
+      p:first-child {
+          color: #666868;
+          font-weight: 500;
+        }
+
+        h3 {
+          font-size: 40px;
+          font-weight: 600;
+          color: $primario;
+          margin-bottom: 10px;
+
+          span {
+            font-size: 40px;
+            color: $secondario;
+            font-weight: 500;
+          }
+        }
     }
   }
 }
