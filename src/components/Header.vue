@@ -131,7 +131,7 @@ header {
           .circle {
             position: absolute;
             top: 20px;
-            left: 912px;
+            left: 902px;
             width: 15px;
             height: 15px;
             background-color: $secondario;

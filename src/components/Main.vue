@@ -1107,6 +1107,17 @@ main {
     flex-direction: column;
     align-items: center;
 
+    .circle {
+      position: absolute;
+      top: 100px;
+      left: 350px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #eeeded;
+      border: 7px solid #E6DCD2;
+    }
+
     p {
       margin-top: 80px;
       text-align: center;
